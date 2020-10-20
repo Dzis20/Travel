@@ -1,0 +1,9 @@
+html{box-sizing:border-box;scroll-behavior:smooth}
+*{padding: 0;margin: 0;}
+*,::after,::before{box-sizing:border-box}
+\:active,\:focus{outline:0}
+body{position:relative}
+img{max-width:100%;display:block}
+h1,h2,h3,h4,h5,h6,p,ul{padding:0;margin:0}
+a{text-decoration:none}
+ul{list-style:none;padding:0}
