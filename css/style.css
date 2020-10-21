@@ -18,7 +18,9 @@ h2.section-title {
     line-height: 50px;
     color: #000;
 }
-
+.burger-menu {
+    display: none;
+}
 .header {
     padding-top: 45px;
     margin-bottom: 72px;
@@ -192,6 +194,7 @@ a.about-btn {
 .dest-top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 56px;
 }
@@ -317,6 +320,7 @@ a.stories-link img {
 .stories-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .stories-item {
     max-width: 266px;
@@ -359,6 +363,7 @@ a.stories-btn {
 .footer-top {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-bottom: 81px;
     border-bottom: 1px solid #C4C4C4;
 }
@@ -379,6 +384,7 @@ a.stories-btn {
 }
 .footer-nav {
     display: flex;
+    flex-wrap: wrap;
 } 
 ul.footer-menu {
     margin-left: 150px;
@@ -405,3 +411,4 @@ ul.footer-menu li.footer-menu-title {
 .footer-bottom a {
     margin: 0 20px;
 }
+

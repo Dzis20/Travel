@@ -2,10 +2,27 @@
     .container {
         max-width: 1200px;
     }
+    .dest-list {
+        flex-wrap: wrap;
+    }
 }
 @media (max-width: 1200px) {
     .container {
         max-width: 990px;
+    }
+    .footer-top {
+     justify-content: center;
+     flex-direction: column;
+    }
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    ul.footer-menu {
+        margin-left: 0;
+    }
+    .footer-info {
+        margin-bottom: 40px;
     }
 }
 
@@ -14,9 +31,21 @@
         max-width: 767px;
         padding: 0 20px;
     }
-}
-
-@media (max-width: 767px) {
+    .header, .main, .about, .destinations, .guides, .testimonials, .stories {
+        margin-bottom: 50px;
+    }
+    .header-content, .destinations-content, .guides-content, .testimonials-content, .stories-content, .footer-content {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .main-content {
+        justify-content: center;
+    }
+    .main-text, .about-text, .guides-text, .test-text {
+        padding: 0;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
     body.lock {
         overflow: hidden;
     }
@@ -26,7 +55,6 @@
     .burger-menu {
         display: block;
         position: relative;
-        top: 15px;
         width: 33px;
         height: 20px;
         z-index: 3;
@@ -38,7 +66,7 @@
         height: 3.84px;
         left: 0;
         top: 8px;
-        background-color: #fff;
+        background-color: #FB8F1D;
         transition: 1s;
     }
     .burger-menu::before,
@@ -49,7 +77,7 @@
         height: 3.84px;
         left: 0;
         transition: 1s;
-        background-color: #fff;
+        background-color: #FB8F1D;
     }
     .burger-menu::before {
         top: 0;
@@ -65,15 +93,87 @@
         transform: rotate(-45deg);
         bottom: 8px;
         transition: 1s;
-        background-color: #fff;
+        background-color: #FB8F1D;
     }
     .burger-menu.active::before {
         transform: rotate(45deg);
         top: 8px;
         transition: 1s;
+        background-color: #FB8F1D;
+    }
+    .header-menu {
+        display: block;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        height: 100%;
+        width: 100%;
         background-color: #fff;
+        z-index: 2;
+        padding-top: 125px;
+        transition: 1s;
+    }
+    .header-menu.active {
+        left: 0;
+        transition: 1s;
     }
     ul.main-nav {
+        display: block;
+        margin-left: 60px;
+    }
+    ul.main-nav li.main-nav-item {
+        margin-left: 0;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    .header-btn {
+        display: block;
+        margin-left: 60px;
+    }
+    .header-btn a {
+        margin-bottom: 20px;
+    }
+    a.header-btn-reg {
+        margin-left: 0;
+    }
+    .main-content, .guides-content, .testimonials-list {
+        flex-direction: column;
+    }
+    .about-content {
+        flex-direction: column-reverse;
+    }
+    .dest-list {
+        margin-bottom: 0;
+    }
+    
+}
+@media (max-width: 570px) {
+    .stories-list {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 571px) {
+    .dest-list {
+        justify-content: center;
+    }
+    .footer-nav {
+        flex-direction: column;
+    }
+    ul.footer-menu {
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 767px) {}
+@media (max-width: 479px) {
+    form.main-form select, a.main-btn {
+        width: 100%;
+    }
+}
+
+    /* ul.main-nav {
         padding-left: 20px;
         display: block;
         position: fixed;
@@ -89,5 +189,4 @@
     ul.main-nav.active {
         left: 0;
         transition: 1s;
-    }
-}
+    } */
